@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- smooth scroll CDN -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+		ScrollReveal({ duration: 1000 })
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/smooth-scrolling-links.js"> </script>
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -26,6 +33,7 @@
 </head>
 
 <body>
+    <div id="top"></div>
     <nav class="navbar sticky-top p-2 bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
         <div class="container p-2">
             <div class="logo">
@@ -40,13 +48,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="top">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#top">Home</a>
                     </li>
                     <li class="nav-item custom">
-                        <a class="nav-link" href="newsandevents">About Us</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item custom">
-                        <a class="nav-link" href="#">Our Services</a>
+                        <a class="nav-link" href="#our_services">Our Services</a>
                     </li>
                     <!-- <li class="nav-item custom">
                         <a class="nav-link" href="#">Feedback</a>
@@ -63,14 +71,14 @@
                         </ul>
                     </li> -->
                     <li class="nav-item custom">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="top" class="top_slider_section">
+    <section class="top_slider_section">
         <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
             data-bs-pause="false">
             <div class="carousel-indicators">
@@ -145,9 +153,10 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div id="about"></div>
     </section>
 
-    <section id="aboutus" class="my-5 pt-5">
+    <section class="about_us my-5 pt-5">
         <div class="section-title">
             <h2>MapleKode Creatives Inc.</h2>
             <div class="shadow-title">We want to make marketing simple</div>
@@ -216,7 +225,7 @@
         </div>
     </section>
 
-    <section id="container project_idea">
+    <section id="container" class="project_idea pb-5 mb-5">
         <div class="red_title">
             <h2>Have a project in mind?</h2>
             <!-- <div class="shadow-title">We do magic</div> -->
@@ -224,12 +233,12 @@
                 marketing
                 campaign? Take the first step and tell us about your project</p>
             <center>
-                <button class="my-3 btn btn-red-custom text-center">Get Started</button>
+                <button class="my-3 btn btn-red-custom text-center" id="contact">Get Started</button>
             </center>
         </div>
     </section>
 
-    <section class="contect_us mt-5">
+    <section class="contect_us">
         <div class="ash_title">
             <h2>Contact Us</h2>
             <p class="px-3 text-center">Digital marketing, content creation, or general information about our services?
@@ -480,6 +489,7 @@
 
 
     </script>
+    <script src="JS/smooth-scroll.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -42,12 +42,11 @@
 *{
 	margin: 0;
 	padding: 0;
-
-
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Rockwell', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 22px;
@@ -56,6 +55,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	background-color: #fbfbfb;
 	overflow-x: hidden !important;
+	scroll-behavior: smooth;
 }
 
 h1,h2,h3,h4,h5,h6{
